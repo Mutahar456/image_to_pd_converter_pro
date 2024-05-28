@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:imagetopdf/screens/IdCardScannerScreen.dart';
 import 'html_to_pdf.dart';
 import 'package:imagetopdf/screens/settings_screen.dart';
 import 'package:imagetopdf/screens/PdfToTextScreen.dart';
@@ -164,16 +163,6 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ImageToPdfConverter()),
-                );
-              },
-            ),
-            ListTile(
-              leading: Icon(Icons.credit_card), // Use any appropriate icon
-              title: Text('ID Card Scanner'),
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => IdCardScannerScreen()),
                 );
               },
             ),
